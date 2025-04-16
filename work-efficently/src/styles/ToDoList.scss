@@ -1,0 +1,39 @@
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffedc9c0;
+    padding: 10px;
+    flex: 1;
+
+    .list-title {
+        font-size: 24px;
+    }
+
+    .list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .list-item-buttons {
+                display: flex;
+                margin-left: 10px;
+
+                .list-button {
+                    background-color: transparent;
+                    border: none;
+                    color: #7d4c2d;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
