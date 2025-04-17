@@ -1,29 +1,33 @@
-import { useState } from 'react'
-import ToDoList from './components/ToDoList'
+// App.jsx
+import {RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './components/Home';
+import Store from './components/Store';
 import "./styles/App.scss"
-import Navbar from './components/Navbar'
-import Egg from './components/Egg'
-import Stats from './components/Stats'
-import { ToastContainer } from 'react-toastify';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
-  
+const App = () => {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children:[
+        {
+          path:"/",
+          element:<Home/>
+        },
+        {
+          path:"/store",
+          element:<Store/>,
+        },
+      ]
+    },
+
+  ]);
 
   return (
-    <>
-      <div className="main-container">
-        <Navbar/>
-        <div className="component-container">
-          <ToDoList/>
-          <Egg/>
-          <Stats/>
-        </div>
-        <ToastContainer position='bottom-right'/>
-      </div>
-        
-    </>
-  )
-}
+    <RouterProvider router={router}/>
+  );
+};
 
-export default App
+export default App;

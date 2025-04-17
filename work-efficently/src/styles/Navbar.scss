@@ -4,14 +4,19 @@
   align-items: center;
   padding: 1rem 2rem;
   color: rgb(126, 52, 14);
-  width: 100%;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 
-  &__logo {
-    font-size: 1.5rem;
+  .navbar-logo {
+    font-size: 1.2rem;
     font-weight: bold;
   }
 
-  &__links {
+  .navbar-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -22,7 +27,7 @@
       a {
         color: rgb(126, 52, 14);
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         transition: color 0.3s ease;
 
         &:hover {
@@ -32,12 +37,11 @@
     }
   }
 
-  // Responsive style
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
 
-    &__links {
+    .navbar-links {
       flex-direction: column;
       width: 100%;
       gap: 0.75rem;

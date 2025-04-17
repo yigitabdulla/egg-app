@@ -1,0 +1,22 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #824c2e;
+    gap: 10px;
+    margin-top: 20px;
+    min-height: 600px;
+
+    .component-container {
+        background-color: #ffe4b299;
+        border: 5px solid #8e5a3a;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 10px;
+        width: 1200px;
+    }
+}

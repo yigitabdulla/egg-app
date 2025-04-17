@@ -1,0 +1,67 @@
+.store-container {
+    background-color: #ffe4b299;
+    border: 5px solid #8e5a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    height: 500px;
+    width: 1200px;
+
+    .egg-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+
+        .egg-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .egg-title {
+            font-size: 1.2rem;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.541);
+            border-radius: 10px;
+        }
+
+        .buy-button {
+            padding: 10px;
+            width: 200px;
+            background: linear-gradient(145deg, #8e5a3a, #a77c53);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Press Start 2P', cursive;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+                background: linear-gradient(145deg, #7f4f3e, #9e6c47);
+                box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+            }
+        }
+        
+    }
+
+    .egg-container:nth-child(1) .egg-title {
+        color: rgb(66, 66, 66);
+    }
+
+    .egg-container:nth-child(2) .egg-title {
+        color: violet;
+    }
+
+    .egg-container:nth-child(3) .egg-title {
+        color: orange;
+    }
+
+    .egg-container:nth-child(4) .egg-title {
+        color: aqua;
+    }
+}

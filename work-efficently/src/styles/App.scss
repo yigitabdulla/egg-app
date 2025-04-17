@@ -10,28 +10,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-  
-  
+    font-family: 'Press Start 2P', cursive;
+}
 
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #824c2e;
-    gap: 10px;
-
-    .component-container {
-        background-color: #ffe4b299;
-        border: 5px solid #f7af57;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        padding: 10px;
-        width: 100%;
-    }
+body.store-bg {
+    background-image: url('/egg-shop.png'); // this will override bg1.png
 }

@@ -44,6 +44,7 @@
       color: #333;
       cursor: pointer;
       transition: color 0.3s ease;
+      font-family: 'Press Start 2P', cursive;
 
       &.active {
         color: white;
@@ -83,6 +84,7 @@
       left: 50%;
       transform: translate(-50%, -50%); 
       z-index: 1;
+      font-size: 0.8rem;
     }
   }
   
