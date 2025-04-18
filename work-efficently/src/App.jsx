@@ -4,6 +4,8 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Store from './components/Store';
 import "./styles/App.scss"
+import Pomodoro from './components/Pomodoro';
+import Profile from './components/Profile';
 
 const App = () => {
 
@@ -19,6 +21,14 @@ const App = () => {
         {
           path:"/store",
           element:<Store/>,
+        },
+        {
+          path:"/pomodoro",
+          element:<Pomodoro/>,
+        },
+        {
+          path:"/profile",
+          element:<Profile/>,
         },
       ]
     },

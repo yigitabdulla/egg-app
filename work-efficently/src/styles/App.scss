@@ -11,8 +11,33 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Press Start 2P', cursive;
+    overflow-x: hidden;
 }
 
 body.store-bg {
     background-image: url('/egg-shop.png'); // this will override bg1.png
+}
+
+body.bg-pomodoro {
+    overflow-y: hidden;
+}
+
+body.bg-fireflies {
+    overflow-y: hidden;
+}
+
+body.bg-forest {
+    overflow-y: hidden;
+}
+
+body.bg-dark-forest {
+    overflow-y: hidden;
+}
+
+body.bg-mountain {
+    overflow-y: hidden;
+}
+
+body.bg-beach {
+    overflow-y: hidden;
 }

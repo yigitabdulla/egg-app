@@ -1,0 +1,139 @@
+.pomodoro-container {
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  .pomodoro-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .toggle-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    h3 {
+        color: black;
+        margin-bottom: 1rem;
+      }
+  }
+
+  .timer-input {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #333;
+      border-radius: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive;
+      background-color: transparent;
+      color: #333;
+    }
+  }
+
+  .timer-display {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1.5rem;
+  }
+
+  .pomodoro-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: background 0.3s ease;
+      font-family: 'Press Start 2P', cursive;
+
+      &:hover {
+        background-color: rgb(97, 97, 97);
+      }
+    }
+  }
+}
+
+.bg-selector {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
+
+  label {
+    margin-right: 0.5rem;
+    font-weight: 500;
+  }
+
+  select {
+    font-family: 'Press Start 2P', cursive;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    outline: none;
+    color: whitesmoke;
+    cursor: pointer;
+  
+    // Background when focused or opened
+    &:focus,
+    &:active,
+    &:focus-visible {
+      background-color: rgba(255, 136, 77, 0.2); // subtle warm highlight
+      border-color: #ff884d;
+      color: gray;
+    }
+  }
+  
+}
+
+.bg-pomodoro {
+    background-image: url('/pomodoro.png');
+}
+
+.bg-fireflies {
+    background-image: url('/fireflies.png');
+}
+
+.bg-forest {
+    background-image: url('/forest.png');
+}
+
+.bg-dark-forest {
+    background-image: url('/dark-forest.png');
+}
+
+.bg-mountain {
+    background-image: url('/mountain-lake.png');
+}
+
+.bg-beach {
+    background-image: url('/beach.png');
+}

@@ -7,8 +7,8 @@ export default function Navbar() {
             <ul className="navbar-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/store">Store</a></li>
-                <li><a href="#">Pomodoro</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="/pomodoro">Pomodoro</a></li>
+                <li><a href="/profile">Profile</a></li>
             </ul>
         </nav>
     )
