@@ -14,26 +14,26 @@ export default function Store() {
     <div className='store-container'>
       <div className="egg-container">
         <p className='egg-title'>Regular Egg</p>
-        <img src="/rare-egg.png" alt="" />
-        <p className='egg-price'>🪙100</p>
+        <img src="/regular-egg.png" alt="" />
+        <div className='egg-price'><p className='coin'>🪙</p><p>100</p></div>
         <button className='buy-button'>Buy</button>
       </div>
       <div className="egg-container">
         <p className='egg-title'>Rare Egg</p>
         <img src="/rare-egg.png" alt="" />
-        <p className='egg-price'>🪙100</p>
+        <div className='egg-price'><p className='coin'>🪙</p><p>300</p></div>
         <button className='buy-button'>Buy</button>
       </div>
       <div className="egg-container">
         <p className='egg-title'>Legendary Egg</p>
-        <img src="/rare-egg.png" alt="" />
-        <p className='egg-price'>🪙100</p>
+        <img src="/legendary-egg.png" alt="" />
+        <div className='egg-price'><p className='coin'>🪙</p><p>600</p></div>
         <button className='buy-button'>Buy</button>
       </div>
       <div className="egg-container">
         <p className='egg-title'>Godly Egg</p>
-        <img src="/rare-egg.png" alt="" />
-        <p className='egg-price'>🪙100</p>
+        <img src="/godly-egg.png" alt="" />
+        <div className='egg-price'><p className='coin'>🪙</p><p>900</p></div>
         <button className='buy-button'>Buy</button>
       </div>
     </div>

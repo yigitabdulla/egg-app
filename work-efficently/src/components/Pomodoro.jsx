@@ -2,6 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Pomodoro.scss';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleNavbar } from '../redux/slices/navbarSlice';
 
 export default function Pomodoro() {
     const [workMinutes, setWorkMinutes] = useState(25);
@@ -12,6 +16,10 @@ export default function Pomodoro() {
     const [dragging, setDragging] = useState(false);
     const [offset, setOffset] = useState({ x: 0, y: 0 });
     const [isMinimized, setIsMinimized] = useState(false);
+    
+    const isVisible = useSelector((state) => state.navbar.isVisible);
+
+    const dispatch = useDispatch();
 
     useEffect(() => {
         setTimeLeft(workMinutes * 60);
@@ -86,6 +94,11 @@ export default function Pomodoro() {
                     <option value="fireflies">Fireflies</option>
                     <option value="beach">Beach</option>
                 </select>
+            </div>
+
+            <div className="toggle-navbar">
+                <label>Navbar</label>
+                <button onClick={() => dispatch(toggleNavbar())} className='toggle-navbar-button'>{isVisible ? <VisibilityIcon/> : <VisibilityOffIcon/>}</button>
             </div>
 
             <div
